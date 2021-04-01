@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/base-mvc-php/public/includes/bootstrap-4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/base-mvc-php/public/includes/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/base-mvc-php/public/css/styles.css">
-    <link href="/base-mvc-php/public/includes/ckeditor4/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo BASE_URL_ROUTE ?>public/includes/bootstrap-4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL_ROUTE ?>public/includes/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL_ROUTE ?>public/css/styles.css">
+    <link href="<?php echo BASE_URL_ROUTE ?>public/includes/ckeditor4/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" rel="stylesheet">
     <title>MVC Base</title>
 
 </head>
@@ -46,7 +46,7 @@
                             include "block-search.php";
                             if ($data['isAdmin']) {
                             ?>
-                                <a class="btn btn-success btn-icon" href="/base-mvc-php/admin">
+                                <a class="btn btn-success btn-icon" href="<?php echo BASE_URL_ROUTE ?>admin">
                                     <i class="fa fa-home" aria-hidden="true"></i>Admin
                                 </a>
                             <?php
@@ -54,11 +54,11 @@
 
                             ?>
 
-                            <a class="btn btn-info btn-icon btn-xs-block" href="/base-mvc-php/perfil">
+                            <a class="btn btn-info btn-icon btn-xs-block" href="<?php echo BASE_URL_ROUTE ?>perfil">
                                 <i class="fa fa-user" aria-hidden="true"></i>Ver perfil
                             </a>
 
-                            <a class="btn btn-danger btn-icon btn-xs-block" href="/base-mvc-php/logout">
+                            <a class="btn btn-danger btn-icon btn-xs-block" href="<?php echo BASE_URL_ROUTE ?>logout">
                                 <i class="fa fa-power-off" aria-hidden="true"></i>Logout
                             </a>
 
@@ -68,10 +68,10 @@
                             include "block-search.php";
                         ?>
 
-                            <a class="btn btn-primary btn-icon" href="/base-mvc-php/register-form">
+                            <a class="btn btn-primary btn-icon" href="<?php echo BASE_URL_ROUTE ?>register-form">
                                 <i class="fa fa-sign-in" aria-hidden="true"></i>Registrarse
                             </a>
-                            <a class="btn btn-success btn-icon" href="/base-mvc-php/login-form">
+                            <a class="btn btn-success btn-icon" href="<?php echo BASE_URL_ROUTE ?>login-form">
                                 <i class="fa fa-user" aria-hidden="true"></i>Iniciar sesión
                             </a>
                         <?php

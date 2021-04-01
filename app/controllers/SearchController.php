@@ -21,7 +21,7 @@ class SearchController extends Controller
                 writeLog(INFO_LOG, "SearchController/proccess_search", $searchProcess);
             }
 
-            redirect_to_url("/base-mvc-php/busqueda/" . $searchProcess);
+            redirect_to_url(BASE_URL_ROUTE . "busqueda/" . $searchProcess);
         }
     }
 

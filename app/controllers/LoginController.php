@@ -41,7 +41,7 @@ class LoginController extends Controller
                 if ($data['user']) {
                     prepareDataLogin($data['user']);
                 }
-                redirect_to_url(BASE_URL);
+                redirect_to_url(BASE_URL_ROUTE);
             } else {
                 $this->view("LoginView", $data);
             }

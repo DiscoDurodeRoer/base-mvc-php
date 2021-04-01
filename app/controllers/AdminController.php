@@ -14,11 +14,11 @@ class AdminController extends Controller
     {
         isLogged();
 
-        header("Location: /base-mvc-php/admin/categorias");
+        header("Location: " . BASE_URL_ROUTE . "admin/categorias");
     }
 
     function back()
     {
-        header("Location: /base-mvc-php");
+        header("Location: " . BASE_URL_ROUTE);
     }
 }

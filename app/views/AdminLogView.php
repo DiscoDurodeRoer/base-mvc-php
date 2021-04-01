@@ -11,7 +11,7 @@ require_once 'AdminView.php';
             <h1>Gestión Log</h1>
         </div>
         <div class="col-md-3 col-12">
-            <a class="btn btn-danger btn-icon btn-block" href="/base-mvc-php/admin/log/delete-log">
+            <a class="btn btn-danger btn-icon btn-block" href="<?php echo BASE_URL_ROUTE ?>admin/log/delete-log">
                 <i class="fa fa-trash" aria-hidden="true"></i> Borrar contenido Log
             </a>
         </div>

@@ -245,7 +245,7 @@ class UserController extends Controller
     {
         $session = new Session();
         $session->destroySession();
-        redirect_to_url(BASE_URL);
+        redirect_to_url(BASE_URL_ROUTE);
     }
 
     function display_unsubscribe()
@@ -274,7 +274,7 @@ class UserController extends Controller
 
         if ($data['success']) {
             $session->destroySession();
-            redirect_to_url(BASE_URL);
+            redirect_to_url(BASE_URL_ROUTE);
         }
     }
 
@@ -317,4 +317,21 @@ class UserController extends Controller
         header("Location: /base-mvc-php/profile");
     }
 
+    function display_topics_user()
+    {
+
+        isLogged();
+
+        $session = new Session();
+
+        $params = array(
+            'id_user' => $session->getAttribute(SESSION_ID_USER)
+        );
+
+        $data = $this->model->search_topics_user($params);
+
+        $data['display_topics_user'] = true;
+
+        $this->view("UserView", $data);
+    }
 }

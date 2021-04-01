@@ -151,11 +151,11 @@
 
                 <!-- Scripts -->
 
-                <script src="/base-mvc-php/public/includes/jquery-3.4.1/jquery-3.4.1.min.js"></script>
-                <script src="/base-mvc-php/public/includes/bootstrap-4.1.3/js/bootstrap.min.js"></script>
-                <script src="/base-mvc-php/public/includes/ckeditor4/ckeditor.js"></script>
-                <script src="/base-mvc-php/public/includes/ckeditor4/plugins/codesnippet/lib/highlight/highlight.pack.js"></script>
-                <script src="/base-mvc-php/public/js/main.js"></script>
+                <script src="<?php echo BASE_URL_ROUTE ?>public/includes/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+                <script src="<?php echo BASE_URL_ROUTE ?>public/includes/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+                <script src="<?php echo BASE_URL_ROUTE ?>public/includes/ckeditor4/ckeditor.js"></script>
+                <script src="<?php echo BASE_URL_ROUTE ?>public/includes/ckeditor4/plugins/codesnippet/lib/highlight/highlight.pack.js"></script>
+                <script src="<?php echo BASE_URL_ROUTE ?>public/js/main.js"></script>
 
                 </body>
 

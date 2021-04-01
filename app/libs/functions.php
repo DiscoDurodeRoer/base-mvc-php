@@ -33,7 +33,7 @@ function isLogged()
 {
     $session = new Session();
     if (!$session->getAttribute('login')) {
-        header('Location: /base-mvc-php');
+        header('Location: ' . BASE_URL_ROUTE);
     }
 }
 

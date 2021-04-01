@@ -1,0 +1,20 @@
+[I][02-04-2021 00:43:16][Search/search_topics]: ["as"]
+[I][02-04-2021 00:43:16][Search/search_topics]: SELECT * FROM  WHERE  LIKE ? 
+[I][02-04-2021 00:43:16][Search/search_topics]: ["%as%"]
+[E][02-04-2021 00:43:16][Search/search_topics]: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE  LIKE ?' at line 1
+[I][02-04-2021 00:43:16][SearchController/display]: {"show_message_info":true,"success":false,"message":"Ha ocurrido un error, contacte con el administrador"}
+[I][02-04-2021 00:44:12][Category/get_categories]: SELECT * FROM categories ORDER BY name
+[I][02-04-2021 00:44:12][Category/get_categories]: []
+[I][02-04-2021 00:44:12][CategoryController/display]: {"category":{"id":1,"name":"Inicio","description":"","parent_cat":1,"icon":"","child":[]}}
+[I][02-04-2021 00:44:14][Category/get_categories]: SELECT * FROM categories ORDER BY name
+[I][02-04-2021 00:44:14][Category/get_categories]: []
+[I][02-04-2021 00:44:14][CategoryController/display]: {"category":{"id":1,"name":"Inicio","description":"","parent_cat":1,"icon":"","child":[]}}
+[I][02-04-2021 00:44:15][Category/get_categories]: SELECT * FROM categories ORDER BY name
+[I][02-04-2021 00:44:15][Category/get_categories]: []
+[I][02-04-2021 00:44:15][CategoryController/display]: {"category":{"id":1,"name":"Inicio","description":"","parent_cat":1,"icon":"","child":[]}}
+[I][02-04-2021 00:44:21][Category/get_categories]: SELECT * FROM categories ORDER BY name
+[I][02-04-2021 00:44:21][Category/get_categories]: []
+[I][02-04-2021 00:44:21][CategoryController/display]: {"category":{"id":1,"name":"Inicio","description":"","parent_cat":1,"icon":"","child":[]}}
+[I][02-04-2021 01:13:03][Category/get_categories]: SELECT * FROM categories ORDER BY name
+[I][02-04-2021 01:13:03][Category/get_categories]: []
+[I][02-04-2021 01:13:03][CategoryController/display]: {"category":{"id":1,"name":"Inicio","description":"","parent_cat":1,"icon":"","child":[]}}

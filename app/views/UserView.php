@@ -13,7 +13,7 @@ include_once 'header.php';
 
         ?>
 
-            <form id="formUser" action="/base-mvc-php/<?php echo isset($data['registry']) ? 'register' : 'editar-perfil'; ?>" method="POST">
+            <form id="formUser" action="<?php echo BASE_URL_ROUTE ?><?php echo isset($data['registry']) ? 'register' : 'editar-perfil'; ?>" method="POST">
 
                 <?php
                 if (isset($data['edit_profile'])) {
@@ -98,7 +98,7 @@ include_once 'header.php';
                 if (isset($data['registry'])) {
                 ?>
                     <div class="row form-group">
-                        <a href="/base-mvc-php/verificacion-form">¿Ya te has registrado y no te ha llegado el correo de activación? Pulsa aquí para reenviar correo.</a>
+                        <a href="<?php echo BASE_URL_ROUTE ?>verificacion-form">¿Ya te has registrado y no te ha llegado el correo de activación? Pulsa aquí para reenviar correo.</a>
                     </div>
                 <?php
                 }
@@ -110,7 +110,7 @@ include_once 'header.php';
         } else if (isset($data['form_verification'])) {
         ?>
 
-            <form action="/base-mvc-php/reenviar-confirmacion" method="POST">
+            <form action="<?php echo BASE_URL_ROUTE ?>reenviar-confirmacion" method="POST">
 
                 <div class="row form-group">
                     <div class="col-12">
@@ -196,16 +196,16 @@ include_once 'header.php';
 
                             <div class="row">
                                 <div class="col-12 text-right">
-                                    <a class="btn btn-success btn-icon" href="/base-mvc-php/editar-perfil-form">
+                                    <a class="btn btn-success btn-icon" href="<?php echo BASE_URL_ROUTE ?>editar-perfil-form">
                                         <i class="fa fa-pencil" aria-hidden="true"></i> Editar perfil
                                     </a>
-                                    <a class="btn btn-success btn-icon" href="/base-mvc-php/editar-password-form">
+                                    <a class="btn btn-success btn-icon" href="<?php echo BASE_URL_ROUTE ?>editar-password-form">
                                         <i class="fa fa-key" aria-hidden="true"></i></i> Cambiar contraseña
                                     </a>
                                     <?php
                                     if ($data['info_user']['rol'] != 1) {
                                     ?>
-                                        <a class="btn btn-danger btn-icon" href="/base-mvc-php/desuscribirse-confirm">
+                                        <a class="btn btn-danger btn-icon" href="<?php echo BASE_URL_ROUTE ?>desuscribirse-confirm">
                                             <i class="fa fa-user-times" aria-hidden="true"></i> Darse de baja
                                         </a>
                                     <?php
@@ -225,7 +225,7 @@ include_once 'header.php';
 
         ?>
 
-            <form action="/base-mvc-php/change_password" method="POST">
+            <form action="<?php echo BASE_URL_ROUTE ?>change_password" method="POST">
 
                 <?php
                 if (isset($data['user_key'])) {
@@ -281,10 +281,10 @@ include_once 'header.php';
 
                     <div class="row">
                         <div class="col-12">
-                            <a class="btn btn-success btn-icon" href="/base-mvc-php/desuscribirse">
+                            <a class="btn btn-success btn-icon" href="<?php echo BASE_URL_ROUTE ?>desuscribirse">
                                 <i class="fa fa-check" aria-hidden="true"></i> Si
                             </a>
-                            <a class="btn btn-danger btn-icon" href="/base-mvc-php/no-desuscribirse">
+                            <a class="btn btn-danger btn-icon" href="<?php echo BASE_URL_ROUTE ?>no-desuscribirse">
                                 <i class="fa fa-times" aria-hidden="true"></i> No
                             </a>
                         </div>

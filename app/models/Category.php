@@ -70,7 +70,7 @@ class Category
                     foreach ($parents as $key => $value) {
                         $breadcumb = new BreadCumb(
                             $value['name'],
-                            '/base-mvc-php/categoria/' . $value['id'] . '-' . stringToPath($value['name']),
+                            BASE_URL_ROUTE . 'categoria/' . $value['id'] . '-' . stringToPath($value['name']),
                             null,
                             $key < ($numRows - 1)
                         );

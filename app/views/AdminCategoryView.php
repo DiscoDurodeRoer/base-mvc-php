@@ -17,7 +17,7 @@ require_once 'AdminView.php'
         <div class="row">
             <div class="col-12">
 
-                <form action="/base-mvc-php/admin/categorias/<?php echo isset($data['category']) ? 'editar-categoria' : 'crear-categoria' ?>" method="POST">
+                <form action="<?php echo BASE_URL_ROUTE ?>admin/categorias/<?php echo isset($data['category']) ? 'editar-categoria' : 'crear-categoria' ?>" method="POST">
 
                     <?php
                     if (isset($data['display_edit'])) {
@@ -103,7 +103,7 @@ require_once 'AdminView.php'
                 <h1>Categorias</h1>
             </div>
             <div class="col-md-3 col-12">
-                <a class="btn btn-primary btn-icon btn-block" href="/base-mvc-php/admin/categorias/crear-categoria-form">
+                <a class="btn btn-primary btn-icon btn-block" href="<?php echo BASE_URL_ROUTE ?>admin/categorias/crear-categoria-form">
                     <i class="fa fa-plus" aria-hidden="true"></i> Crear Categoria
                 </a>
             </div>
@@ -150,7 +150,7 @@ require_once 'AdminView.php'
                                 <td><?php echo $value['parent']; ?></td>
                                 <td><?php echo $value['icon']; ?></td>
                                 <td>
-                                    <a class="btn btn-primary btn-icon" href="/base-mvc-php/admin/categorias/editar-categoria-form/<?php echo $value['id']; ?>">
+                                    <a class="btn btn-primary btn-icon" href="<?php echo BASE_URL_ROUTE ?>admin/categorias/editar-categoria-form/<?php echo $value['id']; ?>">
                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                     </a>
                                 </td>
@@ -158,7 +158,7 @@ require_once 'AdminView.php'
                                     <?php
                                     if ($value['has_child'] == 0) {
                                     ?>
-                                        <a class="btn btn-danger btn-icon" href="/base-mvc-php/admin/categorias/eliminar-categoria/<?php echo $value['id']; ?>">
+                                        <a class="btn btn-danger btn-icon" href="<?php echo BASE_URL_ROUTE ?>admin/categorias/eliminar-categoria/<?php echo $value['id']; ?>">
                                             <i class="fa fa-trash" aria-hidden="true"></i>
                                         </a>
                                     <?php

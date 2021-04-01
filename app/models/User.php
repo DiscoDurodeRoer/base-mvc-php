@@ -147,9 +147,9 @@ class User
             $id_user = $db->getLastId("id", "users");
 
             if(NEED_VERIFICATION_USER == TRUE){
-                $sql = "INSERT INTO users VALUES(?,?,?,?,?,?,?,?,2,?,0,0,0)";
+                $sql = "INSERT INTO users VALUES(?,?,?,?,?,?,?,?,".TYPE_USER_DEFAULT.",?,0,0,0)";
             }else{
-                $sql = "INSERT INTO users VALUES(?,?,?,?,?,?,?,?,2,?,0,0,1)";
+                $sql = "INSERT INTO users VALUES(?,?,?,?,?,?,?,?,".TYPE_USER_DEFAULT.",?,0,0,1)";
             }
             
             if (!empty($params['avatar'])) {
@@ -197,7 +197,7 @@ class User
             $data['text-center'] = true;
 
             if ($success) {
-                $data['message'] = "Su registro se ha completado con éxito. Pulsa <a href='/base-mvc-php/'>aquí</a> para volver al inicio.";
+                $data['message'] = "Su registro se ha completado con éxito. Pulsa <a href='".BASE_URL_ROUTE."'>aquí</a> para volver al inicio.";
 
                 if(NEED_VERIFICATION_USER == TRUE){
                     $paramsEmail = array(
@@ -264,7 +264,7 @@ class User
 
             $data['text-center'] = true;
             if ($data['success']) {
-                $data['message'] = "La edición se ha completado con éxito. Pulsa <a href='/base-mvc-php/'>aquí</a> para volver al inicio.";
+                $data['message'] = "La edición se ha completado con éxito. Pulsa <a href=' ". BASE_URL_ROUTE . " '>aquí</a> para volver al inicio.";
 
                 $data['user'] = array(
                     'id' => $params['id_user'],

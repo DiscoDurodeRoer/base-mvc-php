@@ -1,9 +1,10 @@
 <?php
 
-define("PAGE_URL", "http://localhost:8080/base-mvc-php/public/");
+define("BASE_URL", "base-mvc-php");
 
-define("BASE_URL", "/base-mvc-php/");
+define("BASE_URL_ROUTE", "/" . BASE_URL . "/");
 
+define("PAGE_URL", "http://localhost:8080/" . BASE_URL ."/public/");
 
 define("PATH_IMG", PAGE_URL . "img/");
 define("PATH_LOG", "../app/log/");
@@ -14,6 +15,8 @@ define("HASH_PASS_KEY", "discoduroderoer");
 
 define("SESSION_ID_USER", "id");
 define("SESSION_IS_ADMIN", "isAdmin");
+
+define("TYPE_USER_DEFAULT", 1);
 
 define("TRUE", "1");
 define("FALSE", "0");

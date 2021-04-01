@@ -44,7 +44,7 @@ class AdminCategory
             if ($params['mode'] === ALL_CATEGORIES) {
                 $data["pag"] = $params['page'];
                 $data['last_page'] = ceil($data['num_elems'] / NUM_ITEMS_PAG);
-                $data['url_base'] = "/base-mvc-php/admin/categorias";
+                $data['url_base'] = BASE_URL_ROUTE . "admin/categorias";
             }
 
             $data['success'] = true;

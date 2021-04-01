@@ -43,13 +43,13 @@ require_once 'AdminView.php'
                                 if ($value['baneado'] == TRUE) {
                             ?>
 
-                                    <a class="btn btn-success btn-icon" title="Desbanear usuario" href="/base-mvc-php/admin/user/no-banear/<?php echo $value['id']; ?>">
+                                    <a class="btn btn-success btn-icon" title="Desbanear usuario" href="<?php echo BASE_URL_ROUTE ?>admin/user/no-banear/<?php echo $value['id']; ?>">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                     </a>
                                 <?php
                                 } else {
                                 ?>
-                                    <a class="btn btn-danger btn-icon" title="Banear usuario" href="/base-mvc-php/admin/user/banear/<?php echo $value['id']; ?>">
+                                    <a class="btn btn-danger btn-icon" title="Banear usuario" href="<?php echo BASE_URL_ROUTE ?>admin/user/banear/<?php echo $value['id']; ?>">
                                         <i class="fa fa-ban"></i>
                                     </a>
 
@@ -63,13 +63,13 @@ require_once 'AdminView.php'
                                 if ($value['borrado'] == TRUE) {
                             ?>
 
-                                    <a class="btn btn-success btn-icon" title="Activar usuario" href="/base-mvc-php/admin/user/desactivar/<?php echo $value['id']; ?>">
+                                    <a class="btn btn-success btn-icon" title="Activar usuario" href="<?php echo BASE_URL_ROUTE ?>admin/user/desactivar/<?php echo $value['id']; ?>">
                                         <i class="fa fa-check" aria-hidden="true"></i>
                                     </a>
                                 <?php
                                 } else {
                                 ?>
-                                    <a class="btn btn-danger btn-icon" title="Desactivar usuario" href="/base-mvc-php/admin/user/activar/<?php echo $value['id']; ?>">
+                                    <a class="btn btn-danger btn-icon" title="Desactivar usuario" href="<?php echo BASE_URL_ROUTE ?>admin/user/activar/<?php echo $value['id']; ?>">
                                         <i class="fa fa-ban"></i>
                                     </a>
 
