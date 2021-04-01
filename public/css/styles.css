@@ -1,0 +1,216 @@
+/* General */
+
+html, body {
+    height: 100%;
+}
+
+html body {
+    overflow-x: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.block-logo img {
+    height: 50px;
+}
+
+.greeting {
+    font-size: 20px;
+}
+
+/* Estructura */
+
+#header, #footer {
+    background: #f5f5f5;
+    width: 100%;
+}
+
+#header {
+    top: 0;
+}
+
+#footer {
+    bottom: 0;
+}
+
+/* 
+#content {
+    overflow: auto;
+} */
+
+#content div.content-start, #footer .footer-start {
+    padding: 8px 16px;
+}
+
+#header .btn-icon i {
+    margin-right: 5px;
+}
+
+/* Movil */
+
+/* @media (max-width: 576px) {
+    #header, #footer {
+        width: 100%;
+    }
+    .block-logo, .block-buttons {
+        text-align: center;
+    }
+    .block-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+} */
+
+/* Movil landscape */
+
+/* @media (max-width: 768px) and (orientation: landscape) {
+    #header, #footer {
+        width: 100%;
+    }
+    .block-logo, .block-buttons {
+        text-align: center;
+    }
+    .block-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+} */
+
+/* Tablet */
+
+/*@media (min-width: 576px) and (max-width: 992px) {
+    #header, #footer {
+        width: 100%;
+    }
+    .block-logo, .block-buttons {
+        text-align: center;
+    }
+    .block-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+} */
+
+@media (max-width: 992px) {
+    .block-logo, .block-buttons {
+        text-align: center;
+    }
+    .block-buttons .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+    #header, #footer {
+        height: 80px;
+        position: fixed;
+        z-index: 999;
+    }
+    #content {
+        margin-top: 110px;
+        /* margin-bottom: 110px; */
+    }
+    .block-logo {
+        text-align: left;
+    }
+    .block-buttons {
+        text-align: right;
+    }
+}
+
+/* Messages */
+
+#content div.card.card-message .user-data-message {
+    background: #f5f5f5;
+}
+
+#content img.user-avatar {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#content div.card.card-message .registry-user, #content div.card.card-message .last-connection-user {
+    font-size: 11px;
+}
+
+#content div.card.card-message .username {
+    font-size: 20px;
+}
+
+#content div.message-solution {
+    padding: 10px;
+    background-color: green;
+}
+
+#content .margin-from-footer {
+    margin-bottom: 80px;
+}
+
+/* Ckeditor */
+
+.ck.ck-content {
+    height: 500px;
+}
+
+.reply-fast.ck.ck-content {
+    height: 200px;
+}
+
+/* Breadcumbs */
+
+ul.breadcumbs, .alert ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.breadcumbs li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+ul.breadcumbs li:first-child {
+    margin-left: 0px;
+}
+
+/* Admin */
+
+ul.menu-admin li a {
+    color: #FFF;
+}
+
+ul.menu-admin li a:hover {
+    color: #0073aa
+}
+
+.block-sidebar {
+    background: #23282d;
+}
+
+/* Form-search */
+
+.search-block {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#form-search {
+    position: absolute;
+    background: #FFF;
+    border: 1px solid;
+    padding: 15px;
+    width: 300px;
+}
+
+/* highligh code */
+
+html body .hljs{
+    display: table-caption;
+}
