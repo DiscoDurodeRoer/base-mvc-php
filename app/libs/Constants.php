@@ -60,3 +60,10 @@ define("EMAIL_ADMIN", 'ddr-288a24@inbox.mailtrap.io');
 define("TEMPLATE_NEW_ACCOUNT_NEED_VERIFICATION", __DIR__ . "/../templates_email/create_new_account_need_verification.html");
 define("TEMPLATE_NEW_ACCOUNT_SUCCESS", __DIR__ . "/../templates_email/create_new_account_success.html");
 define("TEMPLATE_EDIT_PASSWORD", __DIR__ . "/../templates_email/edit_password.html");
+
+// Search
+
+define("TABLE_SEARCH", "");
+define("FIELD_ID_SEARCH", "");
+define("FIELD_SEARCH", "");
+define("PATH_SEARCH", "");

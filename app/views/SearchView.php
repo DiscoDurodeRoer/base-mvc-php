@@ -15,16 +15,16 @@ include_once 'header.php';
 
         <?php
 
-        if ($data['has_results']) {
+        if (isset($data['has_results']) && $data['has_results']) {
         ?>
 
             <table class="table">
                 <?php
 
-                foreach ($data['topics'] as $key => $value) {
+                foreach ($data['data'] as $key => $value) {
                     echo "<tr>";
 
-                    echo "<td><a href='/base-mvc-php/reply/" . $value['id'] . "'>" . $value['title'] . "</a></td>";
+                    echo "<td><a href='" . PATH_SEARCH . $value[FIELD_ID_SEARCH] . "'>" . $value[FIELD_SEARCH] . "</a></td>";
               
                     echo "</tr>";
                 }

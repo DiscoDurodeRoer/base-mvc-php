@@ -18,12 +18,12 @@ class Search
             $wordsSearched = explode('+', $params['searched']);
 
             $sql = "SELECT * ";
-            $sql .= "FROM topics ";
+            $sql .= "FROM " . TABLE_SEARCH . " ";
             $sql .= "WHERE ";
-
+            
             for ($i = 0; $i < count($wordsSearched); $i++) {
                 if (!empty($wordsSearched[$i])) {
-                    $sql .= " title LIKE ? ";
+                    $sql .= FIELD_SEARCH . " LIKE ? ";
                     array_push($paramsDB, "%" . urldecode($wordsSearched[$i]) . "%");
                     if ($i !== count($wordsSearched) - 1) {
                         $sql .= " OR ";
@@ -36,7 +36,7 @@ class Search
                 writeLog(INFO_LOG, "Search/search_topics", json_encode($paramsDB));
             }
 
-            $data['topics'] = $db->getDataPrepared($sql, $paramsDB);
+            $data['data'] = $db->getDataPrepared($sql, $paramsDB);
 
             $data['has_results'] = $db->numRowsPrepared($sql, $paramsDB);
         } catch (Exception $e) {
